@@ -1,33 +1,21 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Kitten from './images';
-import cartoonCat from './cartoon_cat';
+import Header from './comp/header.jsx';
 
- import  './sass/style.sass';
- import  './css/style.css';
-
-let myKaty = () => {
-  return` ${Kitten}  `
+const listLi ={
+    name:'vik',
+    age:21,
+    sex: 'man'
 };
-let myCat = () => {
-  return` ${cartoonCat} `
-};
-
-
-let one = document.getElementById('drawCartoonCat');
-    one.innerHTML = myKaty();
-
-let two = document.getElementById('imagesKity');
-    two.innerHTML = myCat();
 
 
 
 ReactDOM.render(
-  <div>
-    <h1>She stared through the window at the stars.</h1>
-  </div>,
+  <Header
+      name={listLi.name}
+      age={listLi.age}
+      sex={listLi.sex}/>,
   document.getElementById('root')
 );
 
