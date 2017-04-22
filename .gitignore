@@ -133,4 +133,5 @@ $RECYCLE.BIN/
 #.gitignore
 .idea/
 public/
-/src/fonts/
+*.zip
+*.rar
