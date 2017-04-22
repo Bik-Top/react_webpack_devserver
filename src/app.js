@@ -18,5 +18,12 @@ ReactDOM.render(
       sex={listLi.sex}/>,
   document.getElementById('root')
 );
+ReactDOM.render(
+  <Header
+      name={listLi.name}
+      age={listLi.age}
+      sex={listLi.sex}/>,
+  document.getElementById('root')
+);
 
 
