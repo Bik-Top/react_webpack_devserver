@@ -1,24 +1,28 @@
 const path = require('path');
 const webpack = require('webpack');
 
-//const moduleRuleOne = require("./src/modules/module-rule-one");
-//import moduleRuleOne from './src/modules/module-rule-one';
+const ServerFavicon = require('serve-favicon');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
-
 webpackConfig = {
-  context: __dirname + '/src',
-  entry: {
-    app: './app.js',
+  context: path.join(__dirname, 'src'),
+  entry  : {
+    app: [
+      './app.js',
+      '../node_modules/css-reset-and-normalize-sass/css/reset-and-normalize.min.css',
+    ]
+
   },
 
+
   output: {
-    path: path.join(__dirname, 'public'),
+    path      : path.join(__dirname, 'public'),
     publicPath: '/public/',
-    filename: '[name].bundle.js',
-    library: '[name]'
+    filename  : '[name].bundle.js',
+    //library   : '[name]'
   },
 
   resolve: {
@@ -26,59 +30,79 @@ webpackConfig = {
   },
 
   devServer: {
-    contentBase: __dirname + '/src/',  // New
+    contentBase: __dirname + '/public/',  // New
+    //contentBase: path.join(__dirname, 'src'),
+    //lazy: true,
+    //compress: true,
+    //filename: "app.bundle.js",
+    //host       : 'localhost',
+    //publicPath : '/public/',
+    stats      : "errors-only",
+    port       : 3030
   },
-  devtool: '#cheap-module-inline-eval-source-map',
+
+  devtool  : '#cheap-module-inline-eval-source-map',
 
   module: {
     rules: [
-        {
-            test: /\.js$|\.jsx$/,
-            use : [{
-                loader: 'babel-loader',
-            }],
-        },
-        {
-            test  : /\.css$/,
-            loader: ExtractTextPlugin.extract({
-                loader: 'css-loader?importLoaders=1',
-            }),
-        },
-        {
-            test: /\.(sass|scss)$/,
-            use : [
-                'style-loader',
-                'css-loader',
-                'sass-loader',
-            ]
-        },
-        {
-            test: /\.svg$|\.png|\.jpe?g|\.gif$/,
-            use : [
-                'url-loader?limit=10000&name=images/[name].[hash].[ext]'
-            ],
-        },
-        {
-            test: /\.woff2?$|\.svg$|\.ttf$|\.eot$/,
-            use : 'file-loader?name=fonts/[name].[ext]',
-        },
+      {
+        test: /\.js$|\.jsx$/,
+        use : [{
+          loader: 'babel-loader',
+        }],
+      },
+      {
+        test  : /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          loader: 'css-loader?importLoaders=1',
+        }),
+      },
+      {
+        test: /\.(sass|scss)$/,
+        use : [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ]
+      },
+    /*  {
+        test: /\.(pug|jade)$/,
+        use: [
+          'raw-loader',
+          'pug-html-loader'
+        ]
+      },*/
+      {
+        test: /\.svg$|\.png|\.jpe?g|\.gif$/,
+        use : [
+          'url-loader?limit=10000&name=images/[name].[hash].[ext]'
+        ],
+      },
+      {
+        test: /\.woff2?$|\.svg$|\.ttf$|\.eot$/,
+        use : 'file-loader?name=fonts/[name].[ext]',
+      },
     ],
   },
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'commons',
-      filename: 'commons.js',
+      name     : 'commons',
+      filename : 'commons.js',
       minChunks: 2,
     }),
     new ExtractTextPlugin({
-      filename: "[name].bundle.css",
+      filename : "css/[name].css",
       allChunks: true,
     }),
-
+    new HtmlWebpackPlugin({
+      filename: 'index.html', //Name of file in ./dist/
+      template: 'index.html', //Name of template in ./src
+      hash: true,
+    }),
   ],
 
 };
 
 
-module.exports= webpackConfig;
+module.exports = webpackConfig;

@@ -1,77 +1,77 @@
 /* Connect font "Russia-Light"; */
 @font-face {
-    font-family: 'Russia';
-    src: local("Russia"), local("Russia-Light"),
-    	 url('../fonts/Russia-Light/RussiaLight.eot') format('embedded-opentype'),
-         url('../fonts/Russia-Light/RussiaLight.woff2') format('woff2'),
-         url('../fonts/Russia-Light/RussiaLight.woff') format('woff'),
-         url('../fonts/Russia-Light/RussiaLight.ttf') format('truetype'),
-         url('../fonts/Russia-Light/RussiaLight.svg#RussiaLight') format('svg');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Russia';
+  src: local("Russia"), local("Russia-Light"),
+  url('../fonts/Russia-Light/RussiaLight.eot') format('embedded-opentype'),
+  url('../fonts/Russia-Light/RussiaLight.woff2') format('woff2'),
+  url('../fonts/Russia-Light/RussiaLight.woff') format('woff'),
+  url('../fonts/Russia-Light/RussiaLight.ttf') format('truetype'),
+  url('../fonts/Russia-Light/RussiaLight.svg#RussiaLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* Connect font "Russia-LightItalic"; */
 @font-face {
-    font-family: 'Russia';
-    src: local("Russia"), local("Russia-LightItalic"),
-    	 url('../fonts/Russia-LightItalic/RussiaLightItalic.eot') format('embedded-opentype'),
-         url('../fonts/Russia-LightItalic/RussiaLightItalic.woff2') format('woff2'),
-         url('../fonts/Russia-LightItalic/RussiaLightItalic.woff') format('woff'),
-         url('../fonts/Russia-LightItalic/RussiaLightItalic.ttf') format('truetype'),
-         url('../fonts/Russia-LightItalic/RussiaLightItalic.svg#RussiaLightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
+  font-family: 'Russia';
+  src: local("Russia"), local("Russia-LightItalic"),
+  url('../fonts/Russia-LightItalic/RussiaLightItalic.eot') format('embedded-opentype'),
+  url('../fonts/Russia-LightItalic/RussiaLightItalic.woff2') format('woff2'),
+  url('../fonts/Russia-LightItalic/RussiaLightItalic.woff') format('woff'),
+  url('../fonts/Russia-LightItalic/RussiaLightItalic.ttf') format('truetype'),
+  url('../fonts/Russia-LightItalic/RussiaLightItalic.svg#RussiaLightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
 }
 
 /* Connect font "Russia-Regular"; */
 @font-face {
-    font-family: 'Russia';
-    src: local("Russia"), local("Russia-Regular"),
-    	 url('../fonts/Russia-Regular/RussiaRegular.eot') format('embedded-opentype'),
-         url('../fonts/Russia-Regular/RussiaRegular.woff2') format('woff2'),
-         url('../fonts/Russia-Regular/RussiaRegular.woff') format('woff'),
-         url('../fonts/Russia-Regular/RussiaRegular.ttf') format('truetype'),
-         url('../fonts/Russia-Regular/RussiaRegular.svg#RussiaRegular') format('svg');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Russia';
+  src: local("Russia"), local("Russia-Regular"),
+  url('../fonts/Russia-Regular/RussiaRegular.eot') format('embedded-opentype'),
+  url('../fonts/Russia-Regular/RussiaRegular.woff2') format('woff2'),
+  url('../fonts/Russia-Regular/RussiaRegular.woff') format('woff'),
+  url('../fonts/Russia-Regular/RussiaRegular.ttf') format('truetype'),
+  url('../fonts/Russia-Regular/RussiaRegular.svg#RussiaRegular') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Connect font "Russia-RegularItalic"; */
 @font-face {
-    font-family: 'Russia';
-    src: local("Russia"), local("Russia-RegularItalic"),
-    	 url('../fonts/Russia-Italic/RussiaItalic.eot') format('embedded-opentype'),
-         url('../fonts/Russia-Italic/RussiaItalic.woff2') format('woff2'),
-         url('../fonts/Russia-Italic/RussiaItalic.woff') format('woff'),
-         url('../fonts/Russia-Italic/RussiaItalic.ttf') format('truetype'),
-         url('../fonts/Russia-Italic/RussiaItalic.svg#RussiaItalic') format('svg');
-    font-weight: 400;
-    font-style: italic;
+  font-family: 'Russia';
+  src: local("Russia"), local("Russia-RegularItalic"),
+  url('../fonts/Russia-Italic/RussiaItalic.eot') format('embedded-opentype'),
+  url('../fonts/Russia-Italic/RussiaItalic.woff2') format('woff2'),
+  url('../fonts/Russia-Italic/RussiaItalic.woff') format('woff'),
+  url('../fonts/Russia-Italic/RussiaItalic.ttf') format('truetype'),
+  url('../fonts/Russia-Italic/RussiaItalic.svg#RussiaItalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* Connect font "Russia-Medium"; */
 @font-face {
-    font-family: 'Russia';
-    src: local("Russia"), local("Russia-Medium"),
-    	 url('../fonts/Russia-Medium/RussiaMedium.eot') format('embedded-opentype'),
-         url('../fonts/Russia-Medium/RussiaMedium.woff2') format('woff2'),
-         url('../fonts/Russia-Medium/RussiaMedium.woff') format('woff'),
-         url('../fonts/Russia-Medium/RussiaMedium.ttf') format('truetype'),
-         url('../fonts/Russia-Medium/RussiaMedium.svg#RussiaMedium') format('svg');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Russia';
+  src: local("Russia"), local("Russia-Medium"),
+  url('../fonts/Russia-Medium/RussiaMedium.eot') format('embedded-opentype'),
+  url('../fonts/Russia-Medium/RussiaMedium.woff2') format('woff2'),
+  url('../fonts/Russia-Medium/RussiaMedium.woff') format('woff'),
+  url('../fonts/Russia-Medium/RussiaMedium.ttf') format('truetype'),
+  url('../fonts/Russia-Medium/RussiaMedium.svg#RussiaMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* Connect font "Russia-Bold"; */
 @font-face {
-    font-family: 'Russia';
-    src: local("Russia"), local("Russia-Bold"),
-    	 url('../fonts/Russia-Bold/RussiaBold.eot') format('embedded-opentype'),
-         url('../fonts/Russia-Bold/RussiaBold.woff2') format('woff2'),
-         url('../fonts/Russia-Bold/RussiaBold.woff') format('woff'),
-         url('../fonts/Russia-Bold/RussiaBold.ttf') format('truetype'),
-         url('../fonts/Russia-Bold/RussiaBold.svg#RussiaBold') format('svg');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Russia';
+  src: local("Russia"), local("Russia-Bold"),
+  url('../fonts/Russia-Bold/RussiaBold.eot') format('embedded-opentype'),
+  url('../fonts/Russia-Bold/RussiaBold.woff2') format('woff2'),
+  url('../fonts/Russia-Bold/RussiaBold.woff') format('woff'),
+  url('../fonts/Russia-Bold/RussiaBold.ttf') format('truetype'),
+  url('../fonts/Russia-Bold/RussiaBold.svg#RussiaBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
 }
