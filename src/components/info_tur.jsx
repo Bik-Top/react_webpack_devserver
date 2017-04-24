@@ -6,13 +6,13 @@ class InfoTur extends React.Component {
       <div className="grid grid-wrap info-tur">
         <div className="cell-width-100 top-text-title text-center">Информация о туре</div>
 
-          <div className="cell-offset-10 cell-width-30">
+          <div className="cell-offset-5 cell-width-30">
 
               <img className=" rounded-full  baku" src={require("../img/baku-min.png")} alt="baku"/>
 
 
           </div>
-          <div className="cell-offset-10 cell-width-30">
+          <div className="cell-offset-5 cell-width-30">
             <div className="text-title">
               Баку: древныий и современый
               тур-фотопрогулка

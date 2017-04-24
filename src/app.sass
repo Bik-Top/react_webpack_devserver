@@ -5,11 +5,13 @@ $menu_link: #212121
 $menu_link_news: #496194
 $text_color_colom: #7f8992
 $text_color_button: #fff
+$text_color_grey: #b8b9ba
 
 $gradient-start: #86e960
 $gradient-end: #75d250
 $gradient-start-hover: #f79038
 $gradient-end-hover: #f76e55
+
 
 //animations
 @keyframes show_from_opaciti
@@ -23,6 +25,9 @@ $gradient-end-hover: #f76e55
   background: $start
   background: linear-gradient(to bottom, $start 0%, $end 100%)
 
+=color-mark ($color)
+  color: $color
+  background: none
 //.gradient
 //  background: #86e960
 //  background: -moz-linear-gradient(top, #86e960 0%, #75d250 100%)
@@ -55,7 +60,7 @@ html
     font: normal 400 18px/26px 'Museo Sans Cyrl 300', sans-serif
     color: $text_color_colom
     min-width: 320px
-    background: #f4f6f7
+    background: #fff
 
 #root
   max-width: 1245px
@@ -104,5 +109,6 @@ html
 @import "components/header"
 @import "components/info_tur"
 @import "components/details"
+@import "components/ticket_cost"
 
 @import "components/adaptiv"

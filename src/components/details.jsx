@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
 
+import DatePicker from 'react-datepicker';
+import moment from 'moment';
+
+
+import 'react-datepicker/dist/react-datepicker.css';
+
 class Details extends React.Component {
   render() {
     return (
       <div className="grid details-block">
 
-          <div className="cell-offset-10 cell-width-25">
+          <div className="cell-offset-5 cell-width-25">
             <div className="top-text-title">Детали</div>
 
             <ul className="cell">
@@ -70,22 +76,45 @@ class Details extends React.Component {
           </div>
 
 
-          <div className="cell-offset-10 cell-width-30">
-            <h1>DATAPICER</h1>
+          <div className="cell-offset-5 cell-width-55">
+            <div className="dataoicker-wraper">
+              <Dataoicker/>
+              <div className="description-text-block text-left">
+                <p> <mark className="griin-mark">Зеленый – </mark>свободные места</p>
+                <p><mark className="read-mark">Красный –</mark> нет свободных мест</p>
+                <p><mark className="greay-mark">Серый –</mark> нет тура на эту дату</p>
+                <button className="button">Забронировать место</button>
 
-            <div className="top-text-title">О компании</div>
-            <p>
-              Добро пожаловать в самую маленькую туристическую компанию Азербайджана LGuide!
-            </p>
-            <p>
-              Забронируйте нашу фотопрогулку по достопримечательностям Баку, узнайте все об истории города, послушайте бакинские мифы и легенды, расссказанные нашим гидом-фотографом, влюбленным в город!
-            </p>
-            <p>
-              Приходите к нам с семьями и друзьями, пробуйте национальную еду, знакомьтесь с бакинцами и получайте прекрасные профессиональные фотографии на фоне лучших в Баку видов (мы точно знаем их все).
-            </p>
-            <p>
-              Не забывайте брать с собой прекрасное настроение и удобную обувь, и в ответ мы обещаем Вам прекрасные воспоминания и подарки от компании!
-            </p>
+                <div className="grid grid-center rounded-full  circleImg">
+                  <div className="grid grid-center rounded-full  circle2">
+                    <div className="grid grid-center rounded-full circle1">
+                      <img src={require("../img/heand_clock-min.png")} alt="heand_clock"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div className="cell-width-25  circles-right">
+              <div className="top-text-title">О компании</div>
+              <p>
+                Добро пожаловать в самую маленькую туристическую компанию Азербайджана LGuide!
+              </p>
+              <p>
+                Забронируйте нашу фотопрогулку по достопримечательностям Баку, узнайте все об истории города, послушайте бакинские мифы и легенды, расссказанные нашим гидом-фотографом, влюбленным в город!
+              </p>
+              <p>
+                Приходите к нам с семьями и друзьями, пробуйте национальную еду, знакомьтесь с бакинцами и получайте прекрасные профессиональные фотографии на фоне лучших в Баку видов (мы точно знаем их все).
+              </p>
+              <p>
+                Не забывайте брать с собой прекрасное настроение и удобную обувь, и в ответ мы обещаем Вам прекрасные воспоминания и подарки от компании!
+              </p>
+            </div>
+
+
           </div>
 
 
@@ -96,6 +125,46 @@ class Details extends React.Component {
   }
 }
 
+
+
+class Dataoicker extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      startDate: moment()
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(date) {
+    this.setState({
+      startDate: date
+    });
+  }
+
+  render() {
+    return <DatePicker
+      locale="ru"
+      dateFormatCalendar="MMMM"
+      name="lololo"
+      highlightDates={
+        [
+          moment().subtract(3, "days"),
+          moment().subtract(2, "days"),
+          moment().add(2, "days")
+        ]}
+      excludeDates={
+        [
+          moment().subtract(1, "days"),
+        ]
+      }
+      inline
+      selected={this.state.startDate}
+      onChange={this.handleChange}
+
+    />;
+  }
+}
 
 
 export default Details;

@@ -1,0 +1,101 @@
+.react-datepicker
+  font: normal 400 16px/27px 'Museo Sans Cyrl 500', sans-serif
+  background-color: transparent
+  color: $menu_link
+  border: none
+  border-radius: 0
+
+.react-datepicker__header
+  background-color: transparent
+  border-bottom: none
+
+.react-datepicker__day
+  background-color: #e5e5e6
+  margin: 0.05rem
+  width: 3.125rem
+  line-height: 3.125rem
+  color: #b8b9ba
+
+.react-datepicker__day-name
+  margin: 0.05rem
+  width: 3.125rem
+  line-height: 3.125rem
+
+.react-datepicker__navigation--previous
+  border: 15px solid rgba(0, 0, 0, 0)
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    border: 13px solid rgba(255, 112, 112, 0)
+    left: -10px
+    top: -13px
+    border-right-color: #f4f6f7
+
+.react-datepicker__navigation--next
+  border: 15px solid rgba(0, 0, 0, 0)
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    border: 13px solid rgba(255, 112, 112, 0)
+    left: -16px
+    top: -13px
+    border-left-color: #f4f6f7
+
+.react-datepicker__navigation--next
+  right: 10px
+  border-left-color: $menu_link
+  &:hover
+    border-left-color: $hovered_link
+
+.react-datepicker__navigation--previous
+  left: 10px
+  border-right-color: $menu_link
+  &:hover
+    border-right-color: $hovered_link
+
+
+
+
+.react-datepicker__day--highlighted
+  background-color: #7be352
+  border-radius: 0
+  color: #fff
+  &:hover
+    background-color: #32be3f
+    border-radius: 0
+    &.react-datepicker__day--selected
+      background-color: #32be3f
+
+
+
+
+.react-datepicker__day--selected
+  border-radius: 0
+  &:hover
+    background: inherit
+    border-radius: 0
+
+.react-datepicker__day--disabled
+  background-color: #f6a496
+  color: #fff
+  &:hover
+    background-color: #d2af6a
+    border-radius: 0
+
+
+
+.react-datepicker__day--outside-month
+  opacity: 0
+
+.react-datepicker__current-month
+  font: normal 500 30px/27px 'Russia-Regular', sans-serif
+  color: $menu_link
+  margin-bottom: 20px
+
+.react-datepicker__day-name
+  color: $text_color_colom
+  font: normal 700 16px/27px 'RRussia-Bold', sans-serif
+  text-transform: uppercase
+

@@ -1,10 +1,8 @@
-
-
+@import "datapicer"
 
 .details-block
   position: relative
   z-index: 3
-  background: #f4f6f7
   padding-top: 120px
 
   ul
@@ -24,6 +22,7 @@
           color: $hovered_link
           background: none
 
+
   .top-text-title
     margin-bottom: 54px
 
@@ -34,5 +33,61 @@
     p
       margin: 0
       margin-left: 23px
+
+
+  .dataoicker-wraper
+    background: #f4f6f7
+    border-radius: 20px
+    box-shadow: 0 15px 0px -10px #d7f7cb
+    padding: 80px 0 40px 0
+    overflow: hidden
+    position: relative
+
+  .description-text-block
+    margin-left: 20%
+    .griin-mark
+      +color-mark($gradient-start)
+    .read-mark
+      +color-mark($gradient-end-hover)
+    .greay-mark
+      +color-mark($text_color_grey)
+
+
+  .circles-right
+    margin-top: 100px
+    border-left: solid 42px transparent
+    border-image: url('../src/img/circle_border-min.png') 0 100% round
+    padding-left: 50px
+    margin-left: 10px
+
+  .react-datepicker
+    margin-left: 20%
+
+  .button
+    position: relative
+    z-index: 2
+
+  .circleImg
+    width: 260px
+    height: 260px
+    background: #fff
+    justify-content: space-around
+    position: absolute
+    bottom: -60px
+    right: -70px
+
+    .circle2
+      width: 200px
+      height: 200px
+      background: #fff
+      justify-content: space-around
+      border: solid 10px #f4f6f7
+
+      .circle1
+        width: 180px
+        height: 180px
+        background: #f4f6f7
+        justify-content: space-around
+
 
 
