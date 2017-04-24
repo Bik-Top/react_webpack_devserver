@@ -1,20 +1,58 @@
 
 
 
-.info-tur
-  position: relative
-  z-index: 3
-  padding-top: 120px
-  margin-top: -147px
-  background: #fff
+.ticket_cost
+  .top-text-title
+    padding-bottom: 80px
+  figure
+    max-width: 360px
+    border: solid 1px #ccc
+    padding: 60px 0
+    transition: all 3s Linear
+    &.active
+      border: solid 1px $hovered_link
+      position: relative
+      top: -20px
+      transition: all 3s Linear
 
-  .cell-width-100.top-text-title
-    margin-bottom: 90px
-  .cell-offset-10.cell-width-30
+    button
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        height: 60px
+        background: rgba(255, 0, 0, 0)
+        width: 100%
+        left: 0
+        z-index: 0
+        bottom: -60px
+
+    p
+      margin: 0
+
+    .figure-burger
+        img
+          max-width: 100%
+          width: 221px
+
     .text-title
-      margin-bottom: 35px
+      font: normal 700 18px/46px 'Russia-Bold', sans-serif
 
-  .baku
-    width: 470px
-    height: 470px
+    .price-place
+      font: normal 400 60px/46px 'Russia-Regular', sans-serif
+      width: 140px
+      height: 140px
+      background: #fff
+      color: $menu_link
+      position: relative
+      margin-top: -40px
+      left: 50%
+      margin-left: -70px
+
+
+
+
+
+  .figure_bottom-text-title
+    font: normal 300 16px/26px 'Russia-LightItalic', sans-serif
 
