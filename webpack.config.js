@@ -13,6 +13,7 @@ webpackConfig = {
     app: [
       './app.js',
       '../node_modules/css-reset-and-normalize-sass/css/reset-and-normalize.min.css',
+      '../node_modules/grid-css/grid.min.css',
     ]
 
   },
@@ -72,14 +73,21 @@ webpackConfig = {
           'pug-html-loader'
         ]
       },*/
-      {
+     {
         test: /\.svg$|\.png|\.jpe?g|\.gif$/,
         use : [
-          'url-loader?limit=10000&name=images/[name].[hash].[ext]'
+          'file-loader?limit=10000&name=images/[name].[hash].[ext]'
         ],
       },
+/*      {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[hash].[ext]',
+        }
+      },*/
       {
-        test: /\.woff2?$|\.svg$|\.ttf$|\.eot$/,
+        test: /\.woff2?$|\.ttf$|\.eot$/,
         use : 'file-loader?name=fonts/[name].[ext]',
       },
     ],
@@ -96,7 +104,7 @@ webpackConfig = {
       allChunks: true,
     }),
     new HtmlWebpackPlugin({
-      filename: 'index.html', //Name of file in ./dist/
+      filename: 'index.html', //Name of file in ./public/
       template: 'index.html', //Name of template in ./src
       hash: true,
     }),
