@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -11,7 +13,11 @@ class Header extends React.Component {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
-  }
+  };
+
+  handleClick(e) {
+    e.preventDefault();
+  };
 
   render() {
     return (
@@ -33,12 +39,12 @@ class Header extends React.Component {
         <div className="cell-center">
           <div className="rounded-full  button-play-nucleus-wrap">
             <div  className="text-center rounded-full grid grid-wrap  button-play">
-
               <div className="cell cell-center  button-play-nucleus">
                 <div className="cell-bottom  cell-width-100  button-play-text-about">О нас за 2 минуты </div>
                 <a href="#" className="inline rounded-full  play-nucleus"
                    onMouseLeave={this.handleOver}
-                   onMouseOver={this.handleOver}>
+                   onMouseOver={this.handleOver}
+                   onClick={Header.handleClick}>
                 </a>
                 <div className={this.state.isToggleOn ? 'OFF_hovered' +  " cell-top cell-width-100  button-play-text-wotch" : 'ON_hovered'  +  " cell-top cell-width-100  button-play-text-wotch"}>Смотреть</div>
               </div>

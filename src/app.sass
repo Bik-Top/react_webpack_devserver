@@ -20,6 +20,7 @@ $gradient-end-hover: #f76e55
   to
     opacity: 1
 
+
 //mixins
 =button-gradient($start, $end)
   background: $start
@@ -95,11 +96,30 @@ html
   &:hover
     +button-gradient($gradient-start-hover, $gradient-end-hover)
 
-
   &:focus
     outline: none
 
 
+.list-with-icon
+  li
+    margin: 40px 0
+    .icon
+      max-width: 50px
+    .description
+      p
+        margin: 0
+        margin-left: 23px
+
+
+.hover-switch-image
+  padding: 5px
+  .actived
+    display: none
+  &:hover
+    .actived
+      display: block
+    .standing
+      display: none
 
 
 
@@ -111,5 +131,8 @@ html
 @import "components/info_tur"
 @import "components/details"
 @import "components/ticket_cost"
+@import "components/info_baku"
+@import "components/partners"
+@import "components/contacts"
 
 @import "components/adaptiv"

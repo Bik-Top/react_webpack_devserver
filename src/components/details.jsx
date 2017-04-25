@@ -14,10 +14,10 @@ class Details extends React.Component {
           <div className="cell-offset-5 cell-width-25">
             <div className="top-text-title">Детали</div>
 
-            <ul className="cell">
+            <ul className="cell list-with-icon">
               <li>
-                <div className="grid grid-center">
-                  <img className="cell cell-center icon" src={require("../img/deys-min.svg")} alt=""/>
+                <div className="grid grid-top">
+                  <img className="cell icon" src={require("../img/deys-min.svg")} alt=""/>
                   <div className="cell description">
                     <p className="text-title">Дни:</p>
                     <p>Пятница, Суббота</p>
@@ -25,8 +25,8 @@ class Details extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="grid grid-center">
-                  <img className="cell cell-center icon" src={require("../img/clock-min.svg")} alt=""/>
+                <div className="grid grid-top">
+                  <img className="cell  icon" src={require("../img/clock-min.svg")} alt=""/>
                   <div className="cell description">
                     <p className="text-title">Время начала:</p>
                     <p>10:00</p>
@@ -34,8 +34,8 @@ class Details extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="grid grid-center">
-                  <img className="cell cell-center icon" src={require("../img/place-min.svg")} alt=""/>
+                <div className="grid grid-top">
+                  <img className="cell  icon" src={require("../img/place-min.svg")} alt=""/>
                   <div className="cell description">
                     <p className="text-title">Место встречи:</p>
                     <p>Hard Rock Café Baku</p>
@@ -44,8 +44,8 @@ class Details extends React.Component {
                 </div>
               </li>
               <li>
-                <div className="grid grid-center">
-                  <img className="cell cell-center icon" src={require("../img/grupp_human-min.svg")} alt=""/>
+                <div className="grid grid-top">
+                  <img className="cell  icon" src={require("../img/grupp_human-min.svg")} alt=""/>
                   <div className="cell description">
                     <p className="text-title">Состав группы:</p>
                     <p>до 10 человек</p>
