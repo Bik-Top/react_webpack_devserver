@@ -1,90 +1,22 @@
+## steps
++ ####1
+<code>
+  nom install
+</code>
 
-### Webpack v.2  webpack-dev-server  Babel  React  SASS
- To build I used Webpack v.2
-Extract text plugin for it need v.2
++ ####2
+<code>
+  npm run run_pack
+</code>
 
-- will be deprecated
++ ####3
+<code>
+  npm run run_pack
+</code>
 
-```
-// before
-modules: {
-  loaders: [...]
-}
++ ####4
+<code>
+  npm run run_WDS:3030
+</code>
 
-// after
-modules: {
-  rules: [...]
-}
-
-```
-
-```
-
-// before
-resolve: {
-  modulesDirectories: [...],
-}
-
-// after
-resolve: {
-  modules: [...],
-}
-```
-
-```
-module: {
-  rules: [{
-    test: /\.scss$/,
-    use: [
-      {
-        loader: 'postcss-loader',
-        options: {
-          plugins: ...
-        }
-      },
-      'sass-loader'
-    ]
-  }]
-}
-```
-
-
-```
-// Webpack 1
-ExtractTextPlugin.extract(
-  'style-loader',
-  'css-loader!postcss-loader!sass-loader'
-);
-
-// Webpack 1
-ExtractTextPlugin.extract(
-  'style-loader',
-  'css-loader?modules-true!postcss-loader!sass-loader'
-);
-
-
-
-// Webpack 2
-var loaders = [
-  {
-    loader: 'css-loader',
-    options: {
-      modules: true
-    }
-  },
-  {
-    loader: 'postcss-loader'
-  },
-  {
-    loader: 'sass-loader'
-  }
-]
-
-
-
-// Webpack 2
-ExtractTextPlugin.extract({
-  fallbackLoader: 'style-loader',
-  loader: loaders,
-})
-```
+ wive on http://localhost:3030/
