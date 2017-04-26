@@ -2,21 +2,22 @@ import React, {Component} from 'react';
 
 
 class TicketCost extends React.Component {
-  handleOver(e){
+  handleOver(e) {
     let el = e.target.parentElement.parentNode;
-     el.className != 'active text-center'? el.className = 'active text-center': el.className = 'text-center';
+    el.className != 'active text-center' ? el.className = 'active text-center' : el.className = 'text-center';
 
     console.log(e.target)
   }
+
   render() {
     return (
       <div className="ticket_cost">
         <div className="top-text-title text-center">Стоимость билетов</div>
 
-        <div className="grid">
+        <div className="grid grid-small-full grid-medium-full">
 
           <div className="cell">
-            <figure className="text-center" >
+            <figure className="text-center">
               <div className="caption-top">
                 <p className="text-title">Взрослые</p>
                 <p className="figure_bottom-text-title">13+</p>
@@ -28,7 +29,9 @@ class TicketCost extends React.Component {
                 </div>
               </div>
               <figcaption>
-                <button className="button" onMouseLeave={this.handleOver} onMouseOver={this.handleOver}>Забронировать место</button>
+                <button className="button" onMouseLeave={this.handleOver} onMouseOver={this.handleOver}>Забронировать
+                  место
+                </button>
               </figcaption>
             </figure>
           </div>
@@ -46,7 +49,9 @@ class TicketCost extends React.Component {
                 </div>
               </div>
               <figcaption>
-                <button className="button" onMouseLeave={this.handleOver} onMouseOver={this.handleOver}>Забронировать место</button>
+                <button className="button" onMouseLeave={this.handleOver} onMouseOver={this.handleOver}>Забронировать
+                  место
+                </button>
               </figcaption>
             </figure>
           </div>
@@ -64,7 +69,9 @@ class TicketCost extends React.Component {
                 </div>
               </div>
               <figcaption>
-                <button className="button" onMouseLeave={this.handleOver} onMouseOver={this.handleOver}>Забронировать место</button>
+                <button className="button" onMouseLeave={this.handleOver} onMouseOver={this.handleOver}>Забронировать
+                  место
+                </button>
               </figcaption>
             </figure>
           </div>
@@ -74,7 +81,6 @@ class TicketCost extends React.Component {
     );
   }
 }
-
 
 
 export default TicketCost;

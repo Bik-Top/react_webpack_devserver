@@ -12,7 +12,7 @@ import Contacts from './components/contacts.jsx';
 import 'app.sass';
 
 ReactDOM.render(
-  <div className="grid-large-fit">
+  <div className="">
     <Menu/>
     <Header/>
     <InfoTur/>

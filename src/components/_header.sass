@@ -1,5 +1,6 @@
-.header
 
+.header
+  position: relative
   .button-play-nucleus-wrap
     padding: 20px
     background: #fff
@@ -76,12 +77,19 @@
     padding: 30px
     background: #f4f6f7
     box-shadow: inset 1px 1px 8px 0 rgba(0, 0, 0, 0.1)
-    position: relative
-    right: 178px
+    position: absolute
+    right: -25px
+    bottom: -8.5vw
     z-index: 1
 
     .image-place
       overflow: hidden
-      width: 610px
-      height: 610px
+      max-width: 610px
+      min-width: 200px
+      width: 35vw
+      height: 35vw
+      img
+        max-width: 100%
 
+  .text-point
+    white-space: nowrap

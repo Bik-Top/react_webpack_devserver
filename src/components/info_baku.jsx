@@ -5,7 +5,7 @@ class InfoBaku extends React.Component {
     return (
       <div className="grid grid-wrap info-baku">
         <div className="cell-width-100 top-text-title text-center">Информация о Баку</div>
-          <div className="cell-offset-10 cell-width-40">
+          <div className="cell-offset-10 cell">
             <ul className="cell list-with-icon">
               <li>
                 <div className="grid grid-top">
@@ -33,7 +33,7 @@ class InfoBaku extends React.Component {
               </li>
             </ul>
           </div>
-          <div className="cell-offset-10 cell-width-40">
+          <div className="cell-offset-10 cell">
             <ul className="cell list-with-icon">
               <li>
                 <div className="grid grid-top">

@@ -21,8 +21,8 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="grid header">
-       <div className="cell-width-33">
+      <div className="grid grid-small-full grid-medium-full header">
+       <div className="cell cell-width-33">
          <div className="top-text-title">Фототур с гидом по Баку</div>
          <p>Прогуляйтесь по прекрасному Баку, вслушайтесь в его легенды и получите Ваши фото на память!</p>
          <button className="button rounded">Забронировать место</button>
@@ -32,7 +32,7 @@ class Header extends React.Component {
              <img className="photograf" src={require("../img/photograf-min.png")} alt="5+"/>
            </div>
            <div className="cell-center">
-             <p>5+ професиональных фотогрфий с тура</p>
+             <p className="text-point">5+ професиональных <wbr/> фотогрфий с тура</p>
            </div>
          </div>
        </div>
@@ -50,10 +50,11 @@ class Header extends React.Component {
               </div>
             </div>
           </div>
-        </div>
-        <div className="rounded-full baku-wraper">
-          <div className="rounded-full image-place">
-            <img src={require("../img/some_bild-min.png")} alt="baku"/>
+
+          <div className="rounded-full baku-wraper">
+            <div className="rounded-full image-place">
+              <img src={require("../img/some_bild-min.png")} alt="baku"/>
+            </div>
           </div>
         </div>
       </div>
